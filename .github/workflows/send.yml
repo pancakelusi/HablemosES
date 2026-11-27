@@ -1,0 +1,61 @@
+name: Send lessons
+
+on:
+  schedule:
+    # Every 30 min between ~5am and ~11pm New York time (cron is UTC).
+    # The script decides what's actually due, so DST and late runs are handled.
+    - cron: "5,35 0-4,10-23 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Date (YYYY-MM-DD) — blank for today"
+        required: false
+      slot:
+        description: "Slot to force (morning / evening) — blank for whatever is due"
+        required: false
+      test:
+        description: "Send to your private test chat instead of the group"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write   # to commit state/sent.json (prevents double-sends)
+
+concurrency:
+  group: send-lessons
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Send
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TEST_CHAT_ID: ${{ secrets.TELEGRAM_TEST_CHAT_ID }}
+          IN_DATE: ${{ inputs.date }}
+          IN_SLOT: ${{ inputs.slot }}
+          IN_TEST: ${{ inputs.test }}
+        run: |
+          args=()
+          [ -n "$IN_DATE" ] && args+=(--date "$IN_DATE")
+          [ -n "$IN_SLOT" ] && args+=(--slot "$IN_SLOT")
+          [ "$IN_TEST" = "true" ] && args+=(--test)
+          python -m hablemos send "${args[@]}"
+
+      - name: Record what was sent
+        run: |
+          git config user.name "hablemos-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/sent.json
+          git diff --cached --quiet || (git commit -m "Sent lessons" && git push)
