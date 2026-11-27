@@ -1,0 +1,66 @@
+# The vocabulary bank. One entry per word (verbs and everything else).
+#
+#   en:          English meaning
+#   pos:         verb / noun / adj / adv / phrase …
+#   status:      new → learning → reinforce → known
+#                (`close` moves new → learning; you set reinforce/known by hand)
+#   forms:       other spellings to count as "used" (conjugations, plurals, feminine…)
+#   times_seen / first_week / last_seen: filled in by `python -m hablemos close`
+#   notes:       anything you want to remember about how she's doing with it
+
+querer:
+  en: to want; to love (someone)
+  pos: verb
+  status: new
+  times_seen: 0
+  forms: [quise, quisiste, quiso, quisimos, quisieron, quería, querías, queríamos, querían]
+  notes: stem-changing e→ie (quiero, but queremos)
+café:
+  en: coffee; café (m.)
+  pos: noun
+  status: new
+  times_seen: 0
+perro:
+  en: dog (m.)
+  pos: noun
+  status: new
+  forms: [perra, perros, perras]
+  times_seen: 0
+parque:
+  en: park (m.)
+  pos: noun
+  status: new
+  forms: [parques]
+  times_seen: 0
+cenar:
+  en: to have dinner
+  pos: verb
+  status: new
+  forms: [ceno, cenas, cena, cenamos, cenan]
+  times_seen: 0
+también:
+  en: also, too
+  pos: adv
+  status: new
+  times_seen: 0
+mucho:
+  en: a lot; much
+  pos: adv
+  status: new
+  forms: [mucha, muchos, muchas]
+  times_seen: 0
+quisiera:
+  en: I would like (polite form of querer)
+  pos: phrase
+  status: new
+  times_seen: 0
+ayer:
+  en: yesterday
+  pos: adv
+  status: new
+  times_seen: 0
+todavía:
+  en: still; yet (todavía no = not yet)
+  pos: adv
+  status: new
+  times_seen: 0

@@ -1,0 +1,306 @@
+# Week 1 — querer · CALIBRATION WEEK
+# Levels are mixed on purpose (A1 → B1) to see where recall gets hard.
+# Pairs with the Instituto Cervantes placement test; adjust Week 2+ from both results.
+# File name = the Sunday the week starts. Sun → Sat.
+# Text tricks: **bold** and _italic_ work in any Spanish/English field.
+
+week_of: 2026-11-29
+level: calibration
+
+verb:
+  infinitive: querer
+  meaning: to want · to love (a person)
+  notes: "Stem-changing (e → ie) in the present, except _nosotros_. Irregular in the past: **quise**. Polite \"I'd like\" = **quisiera**."
+  tenses:
+    #             yo       tú         él/ella/usted  nosotros     ellos/ustedes
+    presente:    [quiero,  quieres,   quiere,        queremos,    quieren]
+    imperfecto:  [quería,  querías,   quería,        queríamos,   querían]
+    preterito:   [quise,   quisiste,  quiso,         quisimos,    quisieron]
+    condicional: [querría, querrías,  querría,       querríamos,  querrían]
+  examples:
+    - es: Quiero un café.
+      en: I want a coffee.
+    - es: De niña, quería ser astronauta.
+      en: As a girl, I wanted to be an astronaut.
+    - es: Quise llamarte, pero no tenía batería.
+      en: I tried to call you, but my battery was dead.
+    - es: Quisiera una mesa para dos, por favor.
+      en: I'd like a table for two, please.
+
+words:
+  new: [querer, quisiera, café, perro, parque, cenar, también, mucho, ayer, todavía]
+  reinforce: []
+
+days:
+  sun:
+    morning:
+      - type: verb_card
+      - type: note
+        text: "🧭 **Semana 1 = semana de calibración.** Esta semana mezcla niveles a propósito. Y una misión: haz la prueba de nivel del Instituto Cervantes y comparte tu resultado aquí (A1, A2, B1…)."
+        en: "Week 1 = calibration week. Levels are mixed on purpose. And a mission: take the Instituto Cervantes placement test and share your result here. We'll tune the coming weeks to it."
+    evening:
+      type: conversation
+      title: Charla de hoy — tres deseos
+      prompt:
+        es: Esta noche, cada uno dice tres cosas que quiere hacer esta semana.
+        en: Tonight, each of you says three things you want to do this week.
+      starters:
+        - es: Esta semana quiero…
+          en: This week I want to…
+        - es: ¿Y tú? ¿Qué quieres hacer?
+          en: And you? What do you want to do?
+
+  mon:
+    morning:
+      - type: story
+        title: Un domingo en el parque
+        glosses:
+          hace frío: it's cold
+          correr: to run
+          caliente: hot
+          pelota: ball
+        lines:
+          - es: Es domingo. Sofía y Mateo están en el **parque** con su **perro**, Lola.
+            en: It's Sunday. Sofía and Mateo are in the park with their dog, Lola.
+          - es: Hace frío, pero Lola **quiere** correr.
+            en: It's cold, but Lola wants to run.
+          - es: —¿Tú **quieres** un café **también**? —pregunta Mateo.
+            en: '"Do you want a coffee too?" asks Mateo.'
+          - es: —No, gracias. Yo **quiero** un chocolate caliente —dice Sofía.
+            en: '"No, thanks. I want a hot chocolate," says Sofía.'
+          - es: Lola no **quiere** café. Lola **quiere** su pelota.
+            en: Lola doesn't want coffee. Lola wants her ball.
+      - type: recall
+        items:
+          - en: I want a hot chocolate.
+            es: Quiero un chocolate caliente.
+          - en: Do you want to go to the park?
+            es: ¿Quieres ir al parque?
+          - en: We want to run too.
+            es: Queremos correr también.
+          - en: The dog doesn't want coffee.
+            es: El perro no quiere café.
+    evening:
+      type: conversation
+      title: Charla de hoy — el fin de semana
+      prompt:
+        es: Planeen el próximo fin de semana… ¡solo en español!
+        en: Plan next weekend… only in Spanish!
+      starters:
+        - es: Yo quiero ir a…
+          en: I want to go to…
+        - es: ¿Quieres…?
+          en: Do you want to…?
+      questions:
+        - es: ¿Quieres ir al parque el sábado?
+          en: Do you want to go to the park on Saturday?
+        - es: ¿Qué quieres comer el domingo?
+          en: What do you want to eat on Sunday?
+
+  tue:
+    morning:
+      - type: story
+        title: Lo que quería Lola
+        intro: "Pasado: quería = wanted (background) · quiso = tried / wanted (and acted)"
+        glosses:
+          levantarse: to get up
+          ladró: barked
+          al final: in the end
+          estaba abierto: was open
+        lines:
+          - es: "**Ayer**, Lola **quería** salir a las seis de la mañana."
+            en: Yesterday, Lola wanted to go out at six in the morning.
+          - es: Mateo no **quería** levantarse. Hacía **mucho** frío.
+            en: Mateo didn't want to get up. It was very cold.
+          - es: Sofía **quiso** dormir cinco minutos más, pero Lola ladró.
+            en: Sofía tried to sleep five more minutes, but Lola barked.
+          - es: Al final, los tres salieron al **parque**.
+            en: In the end, the three of them went out to the park.
+          - es: Mateo **quería** un café, pero el café **todavía** no estaba abierto.
+            en: Mateo wanted a coffee, but the café wasn't open yet.
+        question:
+          es: ¿Por qué no tomó café Mateo?
+          en: Why didn't Mateo have coffee?
+      - type: recall
+        items:
+          - en: Yesterday I wanted to sleep more.
+            es: Ayer quería dormir más.
+          - en: She didn't want to get up.
+            es: Ella no quería levantarse.
+          - en: I tried to call you.
+            es: Quise llamarte.
+            hint: Quise
+          - en: The café wasn't open yet.
+            es: El café todavía no estaba abierto.
+    evening:
+      type: conversation
+      title: Charla de hoy — de niño/a
+      prompt:
+        es: ¿Qué querían ser de niños? ¿Qué querían tener? ¿Adónde querían viajar?
+        en: What did you want to be as kids? What did you want to have? Where did you want to travel?
+      starters:
+        - es: De niña, quería ser…
+          en: As a girl, I wanted to be…
+        - es: Siempre quería tener…
+          en: I always wanted to have…
+        - es: ¿Y tú? ¿Qué querías?
+          en: And you? What did you want?
+
+  wed:
+    morning:
+      - type: dialogue
+        title: En el café (versión educada)
+        glosses:
+          ¿qué desean?: what would you like? (formal)
+          no había: there weren't any
+          eso es todo: that's all
+        lines:
+          - speaker: Mesero
+            es: Buenas tardes. ¿Qué desean?
+            en: Good afternoon. What would you like?
+          - speaker: Sofía
+            es: "**Quisiera** un café con leche, por favor."
+            en: I'd like a coffee with milk, please.
+          - speaker: Mateo
+            es: Para mí, un té. Sofía, ¿**quieres** compartir un pan dulce?
+            en: A tea for me. Sofía, do you want to share a sweet roll?
+          - speaker: Sofía
+            es: ¡Claro! **Ayer** **quería** uno y no había.
+            en: Of course! Yesterday I wanted one and there weren't any.
+          - speaker: Mesero
+            es: Hoy sí hay. ¿Algo más?
+            en: Today we do have them. Anything else?
+          - speaker: Mateo
+            es: No, gracias. Eso es todo.
+            en: No, thanks. That's all.
+      - type: recall
+        title: Dilo en voz alta — versión educada
+        items:
+          - en: I'd like a table for two, please.
+            es: Quisiera una mesa para dos, por favor.
+          - en: I'd like the check, please.
+            es: Quisiera la cuenta, por favor.
+          - en: Would you like something to drink? (to a friend)
+            es: ¿Quieres algo de tomar?
+          - en: That's all, thanks.
+            es: Eso es todo, gracias.
+    evening:
+      type: conversation
+      title: Charla de hoy — juego de roles
+      prompt:
+        es: "Juego: uno es el mesero, el otro es el cliente. Usen «quisiera». Luego cambian."
+        en: "Game: one of you is the waiter, the other is the customer. Use «quisiera». Then switch."
+      starters:
+        - es: ¿Qué desea?
+          en: What would you like? (formal)
+        - es: Quisiera…, por favor.
+          en: I'd like…, please.
+        - es: ¿Algo más?
+          en: Anything else?
+
+  thu:
+    morning:
+      type: gap_fill
+      title: Completa — del más fácil al más difícil
+      items:
+        - es: Yo ___ un café, por favor.
+          answer: quiero
+          en: I want a coffee, please.
+        - es: ¿Tú ___ cenar conmigo esta noche?
+          answer: quieres
+          en: Do you want to have dinner with me tonight?
+        - es: ___ una mesa para dos, por favor. (educado)
+          answer: Quisiera
+          en: I'd like a table for two, please.
+        - es: De niño, Mateo ___ ser astronauta.
+          answer: quería
+          en: As a boy, Mateo wanted to be an astronaut.
+        - es: Ayer nosotros ___ ir al cine, pero llovió.
+          answer: queríamos
+          en: Yesterday we wanted to go to the movies, but it rained.
+        - es: Sofía ___ abrir la puerta, pero no pudo.
+          answer: quiso
+          en: Sofía tried to open the door, but couldn't.
+    evening:
+      type: conversation
+      title: Charla de hoy — la cena
+      prompt:
+        es: Decidan qué van a cenar esta noche, solo en español.
+        en: Decide what you're having for dinner tonight, only in Spanish.
+      starters:
+        - es: ¿Qué quieres cenar?
+          en: What do you want for dinner?
+        - es: Ayer quería…, pero hoy quiero…
+          en: Yesterday I wanted…, but today I want…
+        - es: No quiero… otra vez.
+          en: I don't want… again.
+
+  fri:
+    morning:
+      - type: story
+        title: Viernes en Brooklyn
+        glosses:
+          tocar la guitarra: to play guitar
+          salir: to go out
+          ahora mismo: right now
+          fuera: out (of the house)
+        lines:
+          - es: Es viernes en Brooklyn y todos **quieren** algo diferente.
+            en: It's Friday in Brooklyn and everyone wants something different.
+          - es: Sofía **quiere** correr en el **parque**.
+            en: Sofía wants to run in the park.
+          - es: Mateo **quiere** tocar la guitarra.
+            en: Mateo wants to play guitar.
+          - es: Lola **quiere** salir… ¡ahora mismo!
+            en: Lola wants to go out… right now!
+          - es: Toda la semana **quisieron** **cenar** en casa. Esta noche **quieren** **cenar** fuera.
+            en: All week they tried to eat at home. Tonight they want to eat out.
+      - type: voice
+        prompt:
+          es: "Nota de voz: ¿Qué quieres hacer este fin de semana? ¿Y qué querías hacer esta semana pero no pudiste?"
+          en: "Voice note: What do you want to do this weekend? And what did you want to do this week but couldn't?"
+        starters:
+          - es: Este fin de semana quiero…
+            en: This weekend I want to…
+          - es: Esta semana quería…, pero no pude.
+            en: This week I wanted to…, but I couldn't.
+    evening:
+      type: conversation
+      title: Charla libre del viernes
+      prompt:
+        es: Diez minutos en español durante la cena. Regla del juego — cada uno usa «querer» cinco veces, en tiempos diferentes.
+        en: Ten minutes in Spanish over dinner. Game rule — each of you uses "querer" five times, in different tenses.
+
+  sat:
+    morning:
+      type: quiz
+      intro: Quiz del sábado — de fácil a difícil. ¡Opcional! 🎉
+      questions:
+        - question: "[A1] ¿Cómo se dice \"I want a coffee\"?"
+          options: [Yo quiero un café, Yo quieres un café, Yo quiere un café]
+          answer: 0
+          explanation: "yo → quiero"
+        - question: "[A1] Nosotros ___ ir al parque."
+          options: [quiero, queremos, quieren]
+          answer: 1
+          explanation: "nosotros → queremos (no e→ie change!)"
+        - question: "[A2] \"As a girl, I wanted to be a doctor.\""
+          options: ["De niña, quería ser doctora", "De niña, quise ser doctora", "De niña, quiero ser doctora"]
+          answer: 0
+          explanation: "Ongoing wishes in the past → imperfecto: quería."
+        - question: "[A2] Which is the most polite way to order?"
+          options: [Quiero una mesa, Quisiera una mesa, Quise una mesa]
+          answer: 1
+          explanation: "Quisiera = I'd like. The polite go-to in shops and restaurants."
+        - question: "[B1] \"Quise llamarte, pero no tenía batería\" means…"
+          options: [I tried to call you…, I loved calling you…, I will want to call you…]
+          answer: 0
+          explanation: "In the preterite, quise often means 'I tried'."
+        - question: "[B1] \"No quiso venir\" means…"
+          options: [He refused to come, He might not come, He won't want to come]
+          answer: 0
+          explanation: "Negative preterite of querer = refused."
+    evening:
+      type: note
+      text: "📊 ¿Cómo te fue en el quiz? ¿Y en la prueba de nivel del Cervantes? Comparte tu resultado aquí 👇"
+      en: "How did the quiz go? And the Cervantes placement test? Share your result here. Next week adjusts to it."

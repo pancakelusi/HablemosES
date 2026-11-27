@@ -1,0 +1,10 @@
+# When messages go out, in local time. Add or rename slots freely —
+# every slot name here can be used under a day in the lesson files.
+timezone: America/New_York
+
+slots:
+  morning: "07:30"   # the 5–10 minute read
+  evening: "18:00"   # the conversation nudge
+
+# If GitHub's scheduler runs late, a slot still sends up to this many hours after its time.
+send_window_hours: 3
